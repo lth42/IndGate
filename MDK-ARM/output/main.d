@@ -47,5 +47,7 @@
 .\output\main.o: ..\Middlewares\FreeRTOS\include\task.h
 .\output\main.o: ..\Middlewares\FreeRTOS\include\list.h
 .\output\main.o: ..\Hardware\led.h
-.\output\main.o: ..\Hardware\led_test.h
 .\output\main.o: ..\User\main.h
+.\output\main.o: ..\Hardware\ethernet.h
+.\output\main.o: ..\Hardware\rs232.h
+.\output\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

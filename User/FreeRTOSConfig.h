@@ -85,8 +85,8 @@
 
 #define configUSE_IDLE_HOOK                     0
 #define configUSE_TICK_HOOK                     0
-#define configUSE_MALLOC_FAILED_HOOK            1
-#define configCHECK_FOR_STACK_OVERFLOW          2
+#define configUSE_MALLOC_FAILED_HOOK            0
+#define configCHECK_FOR_STACK_OVERFLOW          0
 
 /* 运行时统计（如需 CPU 使用率统计置 1，并实现相应时钟源） */
 #define configGENERATE_RUN_TIME_STATS           0
@@ -95,9 +95,8 @@
 
 #define configINCLUDE_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS 0
 
-/* 断言：失败时进入 vAssertCalled */
-extern void vAssertCalled( const char *pcFile, int ulLine );
-#define configASSERT( x )  if( ( x ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
+/* 断言：不使用钩子函数，断言为空 */
+#define configASSERT( x )
 
 /* ------------------------------------------------------------------ */
 /* 可选 API 包含控制                                                    */

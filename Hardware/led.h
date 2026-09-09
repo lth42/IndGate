@@ -1,33 +1,18 @@
-/*!
-    \file    led.h
-    \brief   led driver header (PE8~PE11, active low)
-*/
-
 #ifndef __LED_H
 #define __LED_H
 
 #include "gd32f4xx.h"
 
-/* led index */
-typedef enum {
-    LED1 = 0,
-    LED2,
-    LED3,
-    LED4,
-    LED_MAX
-} led_e;
+#define	LED_CLOCK	RCU_GPIOE
+#define	LED_PORT	GPIOE
+#define LED_CAN		GPIO_PIN_8
+#define LED_RS485	GPIO_PIN_9
+#define LED_RS232	GPIO_PIN_10
+#define LED_NET		GPIO_PIN_11
 
-/* configure led gpio */
+
 void led_init(void);
-/* turn one led on (active low) */
-void led_on(led_e led);
-/* turn one led off */
-void led_off(led_e led);
-/* toggle one led */
-void led_toggle(led_e led);
-/* turn all leds on */
-void led_all_on(void);
-/* turn all leds off */
-void led_all_off(void);
+void led_on(uint32_t LED_x);
+void led_off(uint32_t LED_x);
 
-#endif /* __LED_H */
+#endif

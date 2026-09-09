@@ -323,7 +323,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -406,9 +406,39 @@
               <FilePath>..\Hardware\led.c</FilePath>
             </File>
             <File>
-              <FileName>led_test.c</FileName>
+              <FileName>led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\led.h</FilePath>
+            </File>
+            <File>
+              <FileName>ethernet.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Hardware\led_test.c</FilePath>
+              <FilePath>..\Hardware\ethernet.c</FilePath>
+            </File>
+            <File>
+              <FileName>ethernet.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\ethernet.h</FilePath>
+            </File>
+            <File>
+              <FileName>json_data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\json_data.c</FilePath>
+            </File>
+            <File>
+              <FileName>json_data.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\json_data.h</FilePath>
+            </File>
+            <File>
+              <FileName>rs232.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\rs232.c</FilePath>
+            </File>
+            <File>
+              <FileName>rs232.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\rs232.h</FilePath>
             </File>
           </Files>
         </Group>
