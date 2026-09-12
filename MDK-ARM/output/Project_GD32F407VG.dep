@@ -1,5 +1,5 @@
 Dependencies for Project 'Project', Target 'GD32F407VG': (DO NOT MODIFY !)
-F (..\User\main.c)(0x6AA13C9B)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+F (..\User\main.c)(0x6AA4AF47)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
 I (..\Libraries\CMSIS\Include\gd32f4xx.h)(0x69855FE1)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x69855FE1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -49,7 +49,9 @@ I (..\Middlewares\FreeRTOS\include\list.h)(0x6A9D2FC1)
 I (..\Hardware\led.h)(0x6AA0E9F9)
 I (..\User\main.h)(0x6A90E746)
 I (..\Hardware\ethernet.h)(0x6AA1234C)
-I (..\Hardware\rs232.h)(0x6AA14C13)
+I (..\Hardware\rs232.h)(0x6AA159A2)
+I (..\Hardware\rs485.h)(0x6AA4ABB5)
+I (..\Hardware\can1.h)(0x6AA16350)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 F (..\User\gd32f4xx_it.c)(0x6AA00435)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\gd32f4xx_it.o --omf_browse .\output\gd32f4xx_it.crf --depend .\output\gd32f4xx_it.d)
 I (..\User\gd32f4xx_it.h)(0x69855FE5)
@@ -248,7 +250,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x588B8344)
 F (..\Hardware\json_data.h)(0x6AA12825)()
 F (..\Hardware\rs232.c)(0x6AA12EA9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\rs232.o --omf_browse .\output\rs232.crf --depend .\output\rs232.d)
-I (..\Hardware\rs232.h)(0x6AA14C13)
+I (..\Hardware\rs232.h)(0x6AA159A2)
 I (..\Libraries\CMSIS\Include\gd32f4xx.h)(0x69855FE1)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x69855FE1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -285,7 +287,85 @@ I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_misc.h)(0x69855FE2)
 I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_enet.h)(0x69855FE2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_exmc.h)(0x69855FE2)
-F (..\Hardware\rs232.h)(0x6AA14C13)()
+F (..\Hardware\rs232.h)(0x6AA159A2)()
+F (..\Hardware\can1.c)(0x6AA16999)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\can1.o --omf_browse .\output\can1.crf --depend .\output\can1.d)
+I (..\Hardware\can1.h)(0x6AA16350)
+I (..\Libraries\CMSIS\Include\gd32f4xx.h)(0x69855FE1)
+I (..\Libraries\CMSIS\Include\core_cm4.h)(0x69855FE1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x69855FE1)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x69855FE1)
+I (..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x69855FE1)
+I (..\Libraries\CMSIS\Include\system_gd32f4xx.h)(0x69855FE1)
+I (..\User\gd32f4xx_libopt.h)(0x69855FE5)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_rcu.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_adc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_can.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_crc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_ctc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_dac.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_dbg.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_dci.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_dma.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_exti.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_fmc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_fwdgt.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_gpio.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_syscfg.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_i2c.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_iref.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_pmu.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_rtc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_sdio.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_spi.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_timer.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_trng.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_usart.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_wwdgt.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_misc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_enet.h)(0x69855FE2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_exmc.h)(0x69855FE2)
+F (..\Hardware\can1.h)(0x6AA16350)()
+F (..\Hardware\rs485.c)(0x6AA4ABB5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\rs485.o --omf_browse .\output\rs485.crf --depend .\output\rs485.d)
+I (..\Hardware\rs485.h)(0x6AA4ABB5)
+I (..\Libraries\CMSIS\Include\gd32f4xx.h)(0x69855FE1)
+I (..\Libraries\CMSIS\Include\core_cm4.h)(0x69855FE1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x69855FE1)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x69855FE1)
+I (..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x69855FE1)
+I (..\Libraries\CMSIS\Include\system_gd32f4xx.h)(0x69855FE1)
+I (..\User\gd32f4xx_libopt.h)(0x69855FE5)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_rcu.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_adc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_can.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_crc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_ctc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_dac.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_dbg.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_dci.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_dma.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_exti.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_fmc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_fwdgt.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_gpio.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_syscfg.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_i2c.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_iref.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_pmu.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_rtc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_sdio.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_spi.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_timer.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_trng.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_usart.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_wwdgt.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_misc.h)(0x69855FE2)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_enet.h)(0x69855FE2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
+I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_exmc.h)(0x69855FE2)
+F (..\Hardware\rs485.h)(0x6AA4ABB5)()
 F (..\Libraries\CMSIS\Source\system_gd32f4xx.c)(0x69855FE1)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\system_gd32f4xx.o --omf_browse .\output\system_gd32f4xx.crf --depend .\output\system_gd32f4xx.d)
 I (..\Libraries\CMSIS\Include\gd32f4xx.h)(0x69855FE1)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x69855FE1)
@@ -1322,7 +1402,7 @@ I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_misc.h)(0x69855FE2)
 I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_enet.h)(0x69855FE2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (..\Libraries\GD32F4xx_std_periph\Include\gd32f4xx_exmc.h)(0x69855FE2)
-F (..\Middlewares\FreeRTOS\src\tasks.c)(0x6A9D2FC1)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\tasks.o --omf_browse .\output\tasks.crf --depend .\output\tasks.d)
+F (..\Middlewares\FreeRTOS\src\tasks.c)(0x6AA169FA)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Hardware -I ..\Libraries\CMSIS\Include -I ..\Libraries\GD32F4xx_std_periph\Include -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM4F-I.\RTE\_GD32F407VG-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\2.1.0\Device\F4XX\Include-D__UVISION_VERSION="524" -D_RTE_ -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407-o .\output\tasks.o --omf_browse .\output\tasks.crf --depend .\output\tasks.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x588B8344)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6AA0E9E8)

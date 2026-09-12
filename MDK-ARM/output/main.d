@@ -50,4 +50,6 @@
 .\output\main.o: ..\User\main.h
 .\output\main.o: ..\Hardware\ethernet.h
 .\output\main.o: ..\Hardware\rs232.h
+.\output\main.o: ..\Hardware\rs485.h
+.\output\main.o: ..\Hardware\can1.h
 .\output\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

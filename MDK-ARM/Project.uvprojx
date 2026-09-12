@@ -440,6 +440,26 @@
               <FileType>5</FileType>
               <FilePath>..\Hardware\rs232.h</FilePath>
             </File>
+            <File>
+              <FileName>can1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\can1.c</FilePath>
+            </File>
+            <File>
+              <FileName>can1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\can1.h</FilePath>
+            </File>
+            <File>
+              <FileName>rs485.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\rs485.c</FilePath>
+            </File>
+            <File>
+              <FileName>rs485.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\rs485.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

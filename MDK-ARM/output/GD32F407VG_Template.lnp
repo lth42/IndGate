@@ -6,6 +6,8 @@
 ".\output\ethernet.o"
 ".\output\json_data.o"
 ".\output\rs232.o"
+".\output\can1.o"
+".\output\rs485.o"
 ".\output\system_gd32f4xx.o"
 ".\output\gd32f4xx_adc.o"
 ".\output\gd32f4xx_can.o"
